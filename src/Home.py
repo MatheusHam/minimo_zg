@@ -16,18 +16,17 @@ st.set_page_config(
 
 st.title("Minimal Tech")
 
-
+st.image("src/assets/pixel_logo.png")
 st.markdown("""
-### Identidade da Empresa
 
-**Nome:** MINIMAL TECH  
-**Slogan:** "O máximo com o mínimo."
+:blue[O máximo com o mínimo.]
 
-**Missão:**  
-Transformar o mercado empresarial ao oferecer soluções de inteligência artificial customizadas, garantindo que nossos clientes atinjam seus objetivos com o máximo de eficiência e impacto.
+### :green[Quem Somos]
 
-**Visão:**  
-Ser reconhecida como a consultoria de IA que democratiza o acesso às soluções tecnológicas mais avançadas, ajudando empresas a resolverem seus desafios de maneira ágil, acessível e personalizada.
+Oferecemos solucoes em dados e tecnologia para atender demandas de alto impacto.
+
+### :green[Objetivo] 
+
 
 **Valores:**
 - **Comprometimento:** Dedicamos nossa energia e habilidades para garantir o sucesso dos nossos clientes.
@@ -81,23 +80,5 @@ Com a MINIMAL TECH, você não contrata apenas tecnologia, você ganha um parcei
 
 ---
 
-### Material para Divulgação (Redes Sociais e Whatsapp)
-
-**Post para LinkedIn:**  
-"Você sabia que a inteligência artificial pode transformar o desempenho da sua empresa? 🤖🚀
-
-Na MINIMAL TECH, acreditamos que é possível fazer o máximo com o mínimo. Nosso diferencial? Soluções de IA 100% personalizadas para o seu negócio, com preços acessíveis e foco total em resultados.
-
-📊 Entendemos o seu problema.  
-🔧 Construímos a solução sob medida.  
-📈 Entregamos transformação real.
-
-Vamos conversar? Clique aqui [link de agendamento] ou envie uma mensagem!"  
-
-**Post para Instagram:**  
-Imagem: Logotipo da MINIMAL TECH e os dizeres: "A revolução da IA ao seu alcance!"  
-Legenda: "Customização, preço justo e resultados reais. Isso é MINIMAL TECH. Descubra como podemos resolver os desafios do seu negócio. Chame no direct ou agende uma conversa!"  
-
-**Mensagem para Whatsapp:**  
-"Oi, tudo bem? Aqui é da MINIMAL TECH. Estamos ajudando empresas a transformarem seus processos e resultados usando inteligência artificial de maneira personalizada. Temos uma solução perfeita para você. Vamos marcar uma conversa? É rápido e direto!"
-""")
+"""
+)

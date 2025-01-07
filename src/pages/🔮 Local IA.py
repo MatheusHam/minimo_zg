@@ -13,9 +13,9 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("Zeitgeist")
+st.title("LLMs")
 st.write("---")
-st.subheader("[:green]Realize testes com IA sem custo.")
+st.subheader(":green[Realize testes com IA sem custo.]")
 
 end_date = datetime.date.today()
 start_date = end_date - datetime.timedelta(days=30)
