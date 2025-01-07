@@ -33,18 +33,19 @@ st.sidebar.date_input(
 # def load():
 #     return pd.read_csv("data.csv")
 
-
-
-def execute():
+@st.cache_resource
+def load_model():
     model_id = "meta-llama/Llama-3.2-3B-Instruct"
 
-    pipeline = transformers.pipeline(
+    st.session_state.pipeline = transformers.pipeline(
         "text-generation",
         model=model_id,
         model_kwargs={"torch_dtype": torch.bfloat16},
         device_map="auto",
     )
 
+
+def execute():
     messages = [
         {
             "role": "system", 
@@ -55,15 +56,16 @@ def execute():
             "content": user_prompt
         },
     ]
-
-    outputs = pipeline(
+    
+    outputs = st.session_state.pipeline(
         messages,
         max_new_tokens=256,
     )
     
     st.text_area("teste",outputs[0]["generated_text"][-1]['content'])
     
-    
+model = load_model()
+
 system_prompt = st.text_input("System Prompt", "Fala como se fosse um mano de osasco")
 user_prompt = st.text_input("User Prompt", "cinco curiosidades sobre o osasco")
 
