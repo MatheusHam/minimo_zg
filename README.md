@@ -25,4 +25,6 @@ The spirit of the age; the taste, outlook, and spirit characteristic of a period
 
 ## Discord
 
+![Minimo](src/assets/pixel_logo.png)
+
 

@@ -1,19 +1,21 @@
 import datetime
+import time
 
 import streamlit as st
 import pandas as pd
-
 import transformers
 import torch
 
 
 st.set_page_config(
-    page_title="Zeitgeist",
-    page_icon="🔮", 
+    page_title="Minimal Tech",
+    page_icon="🎲", 
     layout="wide"
 )
 
 st.title("Zeitgeist")
+st.write("---")
+st.subheader("[:green]Realize testes com IA sem custo.")
 
 end_date = datetime.date.today()
 start_date = end_date - datetime.timedelta(days=30)
@@ -29,13 +31,11 @@ st.sidebar.date_input(
     min_value=None, max_value=None, key="end_date")
 
 
-# @st.cache_data
-# def load():
-#     return pd.read_csv("data.csv")
-
 @st.cache_resource
 def load_model():
+    
     model_id = "meta-llama/Llama-3.2-3B-Instruct"
+
 
     st.session_state.pipeline = transformers.pipeline(
         "text-generation",
@@ -70,4 +70,14 @@ system_prompt = st.text_input("System Prompt", "Fala como se fosse um mano de os
 user_prompt = st.text_input("User Prompt", "cinco curiosidades sobre o osasco")
 
 if st.button("Run"):
+    start_time = time.time()
     execute()
+    end_time = time.time()
+    execution_time = end_time - start_time
+    st.write(f"Execution Time: {execution_time:.2f} seconds")
+    
+    
+st.write("---")
+st.sidebar.write("Powered by Minimal Tech")
+st.sidebar.write("Developed by Matheus RR")
+st.sidebar.image("src/assets/pixel_logo.png", width=32)

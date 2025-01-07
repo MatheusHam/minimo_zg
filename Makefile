@@ -4,5 +4,5 @@ run:
 
 run_app:
 	@echo "Running Streamlit APP"
-	streamlit run app.py
+	streamlit run src/Home.py
 
