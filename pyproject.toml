@@ -1,0 +1,12 @@
+[project]
+name = "minimo-zg"
+version = "0.1.0"
+description = "Repository For Minimo Zeitgeis, a data application for media."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "accelerate>=1.2.1",
+    "streamlit>=1.41.1",
+    "torch>=2.5.1",
+    "transformers>=4.47.0",
+]
