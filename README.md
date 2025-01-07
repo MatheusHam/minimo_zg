@@ -23,3 +23,6 @@ The spirit of the age; the taste, outlook, and spirit characteristic of a period
 - Capture General Emotions (through viz, reactions, etc...)
 - LEARN.
 
+## Discord
+
+
